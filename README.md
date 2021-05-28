@@ -39,15 +39,19 @@
 [ML5.js](https://ml5js.org/)
 | [p5.js](https://p5js.org/)
 
+Followed this guide: [Facemesh](https://learn.ml5js.org/#/reference/facemesh)
+
 ## Prerequisites 🍪
 
 All you need is a modern web browser like [Google Chrome](https://www.google.com/intl/en_ca/chrome/)
 
 ## Setup And Deployment 🔧
 
-1. Followed this guide: [Facemesh](https://learn.ml5js.org/#/reference/facemesh)
+1. Open `index.html` in your browser.
 
-2. A live version is up and running, check it out at:
+2. Congrats, you're up and running! Should be able to detect and count faces in your browser now.
+
+3. Also, a live version is up and running already, check it out at:
 
 ```text
 https://sassanshokoohi.ca/ml5-FaceMesh/
