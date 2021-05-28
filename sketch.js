@@ -6,7 +6,7 @@ function setup() {
   createCanvas(640, 480);
   video = createCapture(VIDEO);
   video.size(width, height);
-  textSize(width / 20);
+  textSize(20);
 
   facemesh = ml5.facemesh(video, modelReady);
 
@@ -34,22 +34,35 @@ function draw() {
 // A function to draw ellipses over the detected keypoints
 function drawKeypoints() {
   let conf = 0;
-  text("Faces: "+predictions.length, 0, 50 );
   for (let i = 0; i < predictions.length; i += 1) {
     const keypoints = predictions[i].scaledMesh;
-    conf += predictions[i].faceInViewConfidence;
+    // Add up confidence on each face
+    conf += predictions[i].faceInViewConfidence.toFixed(3);
     // Draw facial keypoints.
     for (let j = 0; j < keypoints.length; j += 1) {
       const [x, y] = keypoints[j];
 
       fill(0, 255, 0);
+      stroke(0, 0, 0);
       ellipse(x, y, 5, 5);
     }
   }
+  // Set colors for debug box
+  fill(0, 0, 0, 100);
+  stroke(0, 0, 0);
+  // Draw debug box
+  rect(5,5, 200, 70)
+
+  // Set colour for debug text
+  fill(255, 255, 255);
+  noStroke();
+  // Add debug text
+  text("Faces: "+predictions.length, 10, 30);
+
   if (predictions.length > 0) {
-    text("Confidence: "+((conf/predictions.length).toFixed(3))*100+"%", 0, 90 );
+    text("Confidence: "+((conf/predictions.length))*100+"%", 10, 60);
   } else {
-    text("Confidence: 0", 0, 90 );
+    text("Confidence: 0%", 10, 60 );
   }
   
 }
