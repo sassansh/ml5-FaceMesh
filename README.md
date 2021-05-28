@@ -7,7 +7,7 @@
   <h2 align="center">FaceMesh with ml5 ✨</h2>
 
   <p align="center">
-    Using machine learning (ML5.js) to count number of faces on your webcam. View live demo: <a href="https://php-getting-started-sassansh.herokuapp.com/">php-getting-started-sassansh.herokuapp.com</a>
+    Using machine learning (ML5.js) to count number of faces on your webcam. View live demo: <a href="https://sassanshokoohi.ca/ml5-FaceMesh/">sassanshokoohi.ca/ml5-FaceMesh/</a>
     <br />
     <br />
     <a href="https://sassanshokoohi.ca">About Me</a>
@@ -25,7 +25,7 @@
 [![GitHub license](https://img.shields.io/github/license/sassansh/ml5-FaceMesh?style=for-the-badge)](https://github.com/sassansh/ml5-FaceMesh/blob/master/LICENSE)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![Site preview](/images/screenshot.png)](https://php-getting-started-sassansh.herokuapp.com/db/)
+[![Site preview](/images/screenshot.png)](https://sassanshokoohi.ca/ml5-FaceMesh/)
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ All you need is a modern web browser like [Google Chrome](https://www.google.com
 2. A live version is up and running, check it out at:
 
 ```text
-https://php-getting-started-sassansh.herokuapp.com/
+https://sassanshokoohi.ca/ml5-FaceMesh/
 ```
 
 
