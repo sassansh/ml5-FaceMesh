@@ -37,7 +37,7 @@ function drawKeypoints() {
   for (let i = 0; i < predictions.length; i += 1) {
     const keypoints = predictions[i].scaledMesh;
     // Add up confidence on each face
-    conf += predictions[i].faceInViewConfidence.toFixed(3);
+    conf += predictions[i].faceInViewConfidence;
     // Draw facial keypoints.
     for (let j = 0; j < keypoints.length; j += 1) {
       const [x, y] = keypoints[j];
@@ -60,7 +60,7 @@ function drawKeypoints() {
   text("Faces: "+predictions.length, 10, 30);
 
   if (predictions.length > 0) {
-    text("Confidence: "+((conf/predictions.length))*100+"%", 10, 60);
+    text("Confidence: "+((conf/predictions.length).toFixed(3))*100+"%", 10, 60);
   } else {
     text("Confidence: 0%", 10, 60 );
   }
